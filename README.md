@@ -21,11 +21,11 @@ Este é um aplicativo de lista de tarefas (task list) desenvolvido em Java com S
 
 ### Como Executar
 * Pré-requisitos:
-```
-Java JDK instalado
-Maven instalado
-Banco de dados configurado (verifique as configurações no arquivo application.properties)
-```
+
+> Java JDK 
+> Maven 
+> Banco de dados (verifique as configurações no arquivo application.properties)
+
 * Clone o Repositório:
 ```
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
@@ -33,7 +33,7 @@ cd nome-do-repositorio
 ```
 * Configure o Banco de Dados:
 
-Abra o arquivo application.properties e configure as propriedades do banco de dados, se necessário.
+> Abra o arquivo application.properties e configure as propriedades do banco de dados, se necessário.
 
 * Execute o Aplicativo:
 ```
