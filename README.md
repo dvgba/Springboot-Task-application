@@ -18,6 +18,7 @@ Este é um aplicativo de lista de tarefas (task list) desenvolvido em Java com S
 * TaskController.java: Controlador para operações relacionadas às tarefas, incluindo criação, listagem e atualização.
 * ITaskRepository.java: Interface do repositório para operações de banco de dados relacionadas às tarefas.
 * FilterTaskAuth.java: Implementa um filtro de autenticação para proteger as rotas relacionadas às tarefas.
+* Dockerfile: Arquivo para criar uma imagem Docker do aplicativo, facilitando a implantação.
 
 ### Como Executar
 * Pré-requisitos:
@@ -25,6 +26,7 @@ Este é um aplicativo de lista de tarefas (task list) desenvolvido em Java com S
 > Java JDK 
 > Maven 
 > Banco de dados (verifique as configurações no arquivo application.properties)
+> Docker
 
 * Clone o Repositório:
 ```
@@ -39,6 +41,16 @@ cd nome-do-repositorio
 ```
 mvn spring-boot:run
 ```
+
+* Executar oa aplicação via Docker
+```
+docker build -t todolist-app .
+docker run -p 8081:8081 todolist-app
+```
+
+O aplicativo estará disponível em http://localhost:8081.
+
+> http://localhost:8081
 
 #### Teste as Funcionalidades:
 
